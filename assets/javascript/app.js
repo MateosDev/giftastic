@@ -10,5 +10,18 @@ $( document ).ready(function()
             gifButton.text(animals[i]);
             $("#gifButtonsView").append(gifButton);
         }
-    };
+    }
+    
+    function addNewButton(){
+        $("#addGif").on("click", function(){
+        var animal = $("#animal-input").val().trim();
+        if (animal == ""){
+          return false; 
+        }
+        animals.push(animal);
+    
+        displayGifButtons();
+        return false;
+        });
+    }
     
