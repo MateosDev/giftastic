@@ -10,5 +10,5 @@ $( document ).ready(function()
             gifButton.text(animals[i]);
             $("#gifButtonsView").append(gifButton);
         }
-    }
+    };
     
